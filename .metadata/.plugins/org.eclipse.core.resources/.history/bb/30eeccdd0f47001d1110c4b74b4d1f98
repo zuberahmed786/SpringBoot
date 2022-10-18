@@ -1,0 +1,17 @@
+package com.zohocrm.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LeadController {
+	
+	
+	@RequestMapping("viewLeadPage")
+	public String viewLeadPage() {
+		
+		
+		return"create_lead";
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.zohocrm.entities;
+
+public class Lead {
+
+}

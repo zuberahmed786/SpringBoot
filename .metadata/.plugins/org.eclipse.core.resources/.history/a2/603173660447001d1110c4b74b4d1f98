@@ -1,0 +1,5 @@
+package com.searchLead.controller;
+
+public class LeadRestClient {
+
+}

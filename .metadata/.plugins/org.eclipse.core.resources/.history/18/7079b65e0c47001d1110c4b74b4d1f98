@@ -1,0 +1,29 @@
+package com.zohocrm.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+
+public class Lead {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	@Column(name="first_name",length=30,nullable=false)
+	private String firstName;
+	private String lastName;
+	
+	@Column(name="email",length=30,nullable=false, unique=true)
+	private String email;
+	
+	@Column(name="mobile",length=10,nullable=false ,unique=true)
+	private long mobile;
+	private String source;
+	
+	
+
+}

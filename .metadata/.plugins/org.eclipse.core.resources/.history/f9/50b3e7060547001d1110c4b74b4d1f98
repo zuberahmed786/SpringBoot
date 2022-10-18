@@ -1,0 +1,5 @@
+package com.searchLead.dto;
+
+public class Lead {
+
+}

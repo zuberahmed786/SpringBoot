@@ -1,0 +1,19 @@
+package com.searchLead.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SearchLeadController {
+	
+	@RequestMapping("/searchpage")
+	public String viewSearchPage()
+	{
+		return "search_lead";
+	}
+  
+	@RequestMapping("/searchLead")
+	public String searchLead(@RequestParam("id") long id) {
+		
+	}
+}

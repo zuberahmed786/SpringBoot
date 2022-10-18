@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Lead</title>
+</head>
+<body>
+
+<h2>Register Lead</h2>
+
+<form action="saveOneLead" method="post">
+
+<pre>
+
+ First Name: <input type="text" name="firstName"/>
+ Last Name : <input type="text" name="lastName"/>
+ Email     : <input type="email" name="email"/>
+ Mobile    : <input type="number" name="mobile"/>
+ 
+ Source    :<select name="source" >
+ <option value="news_paper">News Paper</option>
+ <option value="tv">TV Commercial</option>
+ <option value="online">Online</option>
+ <option value="seminar">Seminar</option>
+ </select>
+ 
+ <input type="button" value="Save"/>
+ 
+ </pre>
+
+</form>
+
+</body>
+</html>
